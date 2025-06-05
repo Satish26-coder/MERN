@@ -1,0 +1,269 @@
+Assignment 1: My First Webpage - Structure and Basic Elements
+Topics Covered (from PPT): Introduction to HTML (Slides 2, 3), HTML Document Structure (Slides 4, 5), Basic HTML Terminology (Tag, Element, Attribute, Content - Slide 6, 7), Heading Elements (Slide 11), Paragraph Element (Slide 12).
+Task:
+Create a new HTML file named my_first_page.html.
+Set up the basic HTML document structure as shown in your slides (including <!DOCTYPE html>, <html>, <head>, <title>, <meta charset="UTF-8">, and <body>).
+In the 
+Give your page an appropriate <title> (e.g., "My Introduction Page").
+
+
+In the 
+Add a main heading (<h1>) with your name.
+Below your name, add a subheading (<h2>) that says "About Me."
+Write two short paragraphs (<p>) about yourself (e.g., your hobbies, what you are learning, your favorite food).
+Add another subheading (<h3>) that says "My Goals."
+Write one paragraph (<p>) about a goal you have (related to learning HTML or anything else).
+
+
+Ensure your code is well-indented and readable.
+Validate your HTML using an online validator like the W3C Markup Validation Service (as mentioned in Slide 36 - even if you haven't covered validation in detail yet, it's good practice to introduce).
+
+
+Deliverable: The my_first_page.html file.
+
+
+
+Assignment 2: Building a Content Page with Links, Images, and Lists
+Task:
+Create an HTML file named favorite_things.html.
+Set up the basic HTML document structure. Give it an appropriate <title>.
+In the 
+Create a main heading (<h1>) "My Favorite Things."
+Favorite Websites Section:
+Add a subheading (<h2>) "My Favorite Websites."
+Create an unordered list (<ul>) of at least three of your favorite websites.
+Each list item (<li>) should contain an anchor element (<a>) that links to the actual website. The link text should be the name of the website.
+Make one of these links open in a new tab (Hint: target attribute).
+
+
+Favorite Hobby Section:
+Add a subheading (<h2>) "My Favorite Hobby."
+Write a short paragraph (<p>) describing your favorite hobby.
+Include an image (<img>) related to your hobby.
+Find an image online or use a local one.
+Set the src attribute correctly.
+Provide descriptive alt text.
+Give the image a width attribute (e.g., width="200px" or width="200").
+
+
+
+
+Steps to Learn HTML Section:
+Add a subheading (<h2>) "Steps I'm Taking to Learn HTML."
+Create an ordered list (<ol>) detailing at least three steps (e.g., "1. Attending this course," "2. Practicing coding examples," "3. Reading online documentation").
+
+
+Validate your HTML.
+
+
+Deliverable: The favorite_things.html file (and any local image file if used, or provide the image URL in a comment).
+
+Assignment 3: Creating a Structured Information Table and Embedding Media
+Task:
+Create an HTML file named media_and_tables.html.
+Set up the basic HTML document structure and give it a <title>.
+In the 
+Create a main heading (<h1>) "Multimedia Showcase and Data Table."
+Data Table Section:
+Add a subheading (<h2>) "Comparison of Devices."
+Create an HTML table (<table>) to compare at least 3 different electronic devices (e.g., Phone, Laptop, Tablet).
+The table should have columns for: Device Name, Key Feature 1, Key Feature 2, Price (approximate).
+Use <th> for the table headers.
+Use <tr> for rows and <td> for data cells.
+Include a <caption> for your table.
+
+
+Embedded Video Section:
+Add a subheading (<h2>) "Featured Video."
+Embed a YouTube video (or any other embeddable video) using an <iframe>. Choose a video related to technology or a tutorial.
+Set appropriate width, height, and include the allowfullscreen attribute.
+
+
+Embedded Audio Section (Optional Bonus):
+If you can find a sample .mp3 or .ogg file (or link to one online), add a subheading (<h2>) "Sample Audio Clip" and embed it using the <audio> tag with controls. Use the <source> tag if you want to practice.
+Validate your HTML.
+Deliverable: The media_and_tables.html file.
+
+Assignment 4: Building a Structured Content Page
+Topics: <iframe>, Tables, Semantic HTML
+Task:
+Create an HTML page about your favorite movie or book.
+Structure the page using appropriate semantic HTML5 tags: <header>, <nav>, <main>, <article>, <section>, <footer>.
+In the  Include the title of the movie/book.
+In the  Create a simple navigation menu (e.g., Home, About, Cast/Characters, Media). Links don't need to work.
+In the 
+Create an <article> for the main synopsis/summary.
+Within the article, or as a separate <section>, create an HTML table listing 3-4 main characters/actors and their roles. The table should have appropriate headers (<th>).
+Add an <iframe> embedding a relevant YouTube trailer or a related webpage (e.g., its Wikipedia page or official site). Ensure the iframe has a title attribute.
+In the  Include a copyright notice (e.g., © [Your Name] [Year]).
+
+
+Deliverable: The HTML file.
+
+Assignment 5: Creating an Event Registration Form
+Topics: HTML Forms, Various Input Types, Form Attributes
+Task:
+Create an HTML page with a registration form for a fictional event (e.g., "Web Developers Conference 2024").
+The form should be enclosed in a <form> tag (you can leave action as "#").
+Use <fieldset> and <legend> to group sections of the form (e.g., "Personal Details," "Session Preferences").
+Include the following input fields, using appropriate 
+Full Name (text, required)
+Email (email, required, placeholder)
+Phone Number (tel, placeholder, suggest a pattern if you like)
+Number of Attendees (number, min 1, max 5, default 1)
+Date of Registration (date)
+Preferred Workshop (use radio buttons for 3 choices, e.g., "Frontend Basics," "Backend with Node.js," "Advanced CSS")
+Dietary Restrictions (use checkboxes for options like "Vegetarian," "Gluten-Free," "None")
+How did you hear about us? (use a <select> dropdown with 3-4 options)
+Comments/Questions (textarea)
+A submit button with the text "Register for Event."
+A reset button.
+
+
+Assignment 6: Building a Basic Form and Using Semantic Layout
+Task:
+Create an HTML file named contact_us.html.
+Use semantic HTML elements for the page layout:
+A <header> for the top of the page.
+A <nav> element for a simple navigation menu (links don't need to work).
+A <main> element to contain the primary content (your form).
+A <footer> for the bottom of the page.
+
+
+Inside the  Add an <h1> "Contact Our Team."
+Inside the  Create an unordered list (<ul>) with list items (<li>) containing anchor tags (<a>) for "Home," "About," and "Contact."
+Inside the 
+Create a <section> for the contact form.
+Inside the section, build a contact form (<form>). You don't need a real action URL for now (can use action="#").
+The form should include fields for:
+Name (<input type="text">)
+Email (<input type="email">)
+Subject (<input type="text">)
+Message (<textarea>)
+A checkbox (<input type="checkbox">) for "I agree to the terms and conditions."
+A submit button (<input type="submit"> or <button type="submit">).
+
+
+Use <label> elements appropriately for each input field, associating them correctly.
+
+
+Inside the  Add a simple paragraph (<p>) with a copyright notice.
+Validate your HTML.
+
+
+Deliverable: The contact_us.html file.
+
+Assignment 7: Exploring HTML Character Entities and Page Validation (Short Task)
+Task:
+Create an HTML file named entities_and_validation.html.
+Inside the <body>, write paragraphs that correctly display the following:
+The less-than symbol: <
+The greater-than symbol: >
+The ampersand symbol: &
+The copyright symbol: ©
+The phrase "2 < 5 is a true statement."
+A sentence with multiple spaces between two words that should render as multiple spaces (Hint: &nbsp;). For example: "This   has   extra spaces."
+
+
+After creating the page, intentionally introduce one or two small HTML syntax errors (e.g., forget a closing tag, misspell an attribute).
+Go to the W3C Markup Validation Service (validator.w3.org) and try to validate your page by uploading the file or pasting the code.
+Take a screenshot of the validation results showing the errors.
+Correct the errors in your HTML file and validate it again. Take a screenshot of the successful validation.
+
+
+Final html assignment
+Assignment: Building Your Personal Portfolio Static Website with HTML
+Objective:
+To create a multi-page static personal portfolio website using only HTML. This project will demonstrate your understanding of HTML structure, semantic elements, content tags (headings, paragraphs, lists, images, links), tables, forms, and media embedding.
+(CSS for styling will be a separate, later project. For now, focus on correct and semantic HTML structure).
+Project Requirements:
+Your portfolio website must consist of at least three (3) linked HTML pages:
+ (Homepage / About Me):
+Basic Structure: Standard HTML5 document structure (<!DOCTYPE html>, <html>, <head>, <body>).
+ Section:
+Appropriate <title> (e.g., "Your Name - Personal Portfolio").
+<meta charset="UTF-8">.
+<meta name="description" content="A brief description of your portfolio"> (Good practice).
+<meta name="keywords" content="your name, portfolio, web developer, skills"> (Good practice).
+
+
+Semantic Layout:
+Use <header> for the top section of your page.
+Include your name prominently (e.g., using <h1>).
+Optionally, a brief tagline or professional title (e.g., using a <p> or <h2>).
+
+
+Use <nav> for the main site navigation.
+This navigation should be an unordered list (<ul>) of links (<a>) to your other pages (Projects, Contact) and potentially to sections within the homepage if you make it long.
+
+
+Use <main> to enclose the primary content of this page.
+Inside <main>, use <section> or <article> elements to organize content.
+About Me Section: A section with a heading (e.g., <h2>About Me</h2>) and a few paragraphs (<p>) introducing yourself, your background, and your interests (especially related to web development or the field you're entering).
+Skills Section: A section with a heading (e.g., <h2>My Skills</h2>).
+Use an unordered list (<ul>) to list your technical skills (e.g., HTML, CSS (even if basic), JavaScript (if applicable), design tools, etc.).
+Optionally, use a simple table (<table>) here to list skills and your proficiency level (e.g., Beginner, Intermediate).
+
+
+
+
+Use <footer> for the bottom of the page.
+Include a copyright notice (e.g., &copy; [Current Year] Your Name. All rights reserved.).
+Optionally, links to social media profiles (use text links for now).
+ (Projects Page):
+Basic Structure & Semantic Layout: Similar to the homepage (<header>, <nav> (consistent with homepage), <main>, <footer>).
+ Section: Appropriate <title> (e.g., "Projects - Your Name").
+ Content:
+A main heading for the page (e.g., <h1>My Projects</h1>).
+Create at least two project entries. Each project entry should be within its own <article> or <section>.
+For each project:
+A project title (e.g., <h2>Project Title</h2>).
+A brief description of the project (<p>).
+An image (<img>) representing the project (a screenshot, a logo, or a relevant placeholder). Include alt text. You can set a width.
+A link (<a>) to the live project (if available, use "#" if not) or its GitHub repository.
+Optionally, an unordered list (<ul>) of technologies used in the project.
+If you don't have "real" projects yet, you can create fictional ones or describe class assignments you've completed.
+ (Contact Page):
+Basic Structure & Semantic Layout: Similar to the other pages.
+ Section: Appropriate <title> (e.g., "Contact Me - Your Name").
+ Content:
+A main heading for the page (e.g., <h1>Get in Touch</h1>).
+A paragraph (<p>) with a brief introductory message for contacting you.
+A contact form (<form>). The form doesn't need to actually submit data for this assignment (use action="#").
+Fields should include:
+Full Name (<input type="text">)
+Email (<input type="email">)
+Subject (<input type="text">)
+Message (<textarea>)
+
+
+Use <label> elements correctly associated with each input field.
+Include a submit button.
+
+
+Optionally, include other contact information like a (fake for privacy) email address as plain text or a link using mailto:. You could also embed a simple map using an <iframe> (e.g., a map to a fictional office or general city location).
+General Requirements & Best Practices:
+Valid HTML5: Your code should be well-formed and valid. Use an online validator (like the W3C validator) to check your pages.
+Semantic HTML: Prioritize using semantic tags (<header>, <nav>, <main>, <article>, <section>, <footer>, etc.) appropriately to give structure and meaning to your content.
+Accessibility:
+Include alt text for all images.
+Ensure labels are correctly associated with form inputs.
+Use headings (<h1> - <h6>) hierarchically.
+
+
+Readability: Your HTML code should be well-indented and easy to read. Use comments where necessary to explain sections of your code if you feel it helps.
+Linking: All internal page links (navigation) must work correctly.
+Content: While the focus is on HTML, try to put in some sensible (even if placeholder or "Lorem Ipsum" for longer texts) content to make the pages feel somewhat complete.
+File Organization: Keep your HTML files (index.html, projects.html, contact.html) and any image files in a well-organized project folder.
+What NOT to Include (for this specific assignment):
+No CSS Styling: Do not add any CSS (inline, internal, or external) beyond what might be default browser styles or absolutely minimal attributes if specified (like width for an image). The goal is to focus purely on HTML structure.
+No JavaScript: Do not include any JavaScript.
+Deliverables:
+A ZIP file containing your entire project folder, which should include:
+index.html
+projects.html
+contact.html
+Any image files you used locally.
+
+
+(Optional) A short text file (notes.txt) explaining any challenges you faced or specific choices you made in your HTML structure.
