@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Practice Zone</title>
+    <link rel="stylesheet" href="grid-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learning CSS Grid Layout</h1>
+    </header>
+
+    <main>
+        <!-- Example 1: Basic Grid Container & Defining Columns/Rows -->
+        <h2>Example 1: Basic Grid - Columns & Rows</h2>
+        <div class="grid-container example-1">
+            <div class="grid-item item-a">A</div>
+            <div class="grid-item item-b">B</div>
+            <div class="grid-item item-c">C</div>
+            <div class="grid-item item-d">D</div>
+            <div class="grid-item item-e">E</div>
+            <div class="grid-item item-f">F</div>
+        </div>
+
+        <!-- Example 2: Spanning Items & fr unit -->
+        <h2>Example 2: Spanning Items & 'fr' unit</h2>
+        <div class="grid-container example-2">
+            <div class="grid-item item-a item-span-2-cols">Header (Spans 2 cols)</div>
+            <div class="grid-item item-b">Sidebar</div>
+            <div class="grid-item item-c item-span-2-rows">Main Content (Spans 2 rows)</div>
+            <div class="grid-item item-d">Extra</div>
+            <div class="grid-item item-e item-span-all-cols">Footer (Spans all cols)</div>
+        </div>
+
+        <!-- Example 3: Grid Gap -->
+        <h2>Example 3: Grid Gap</h2>
+        <div class="grid-container example-3">
+            <div class="grid-item item-a">One</div>
+            <div class="grid-item item-b">Two</div>
+            <div class="grid-item item-c">Three</div>
+            <div class="grid-item item-d">Four</div>
+        </div>
+
+        <!-- Example 4: Grid Template Areas -->
+        <h2>Example 4: Grid Template Areas</h2>
+        <div class="grid-container example-4">
+            <div class="grid-item area-header">Header Area</div>
+            <div class="grid-item area-sidebar">Sidebar Area</div>
+            <div class="grid-item area-main">Main Content Area</div>
+            <div class="grid-item area-footer">Footer Area</div>
+        </div>
+
+        <!-- Example 5: Aligning Items within their cell -->
+        <h2>Example 5: Aligning Items (justify-items, align-items)</h2>
+        <div class="grid-container example-5">
+            <div class="grid-item item-a">Item 1</div>
+            <div class="grid-item item-b">Item 2 (longer content to test alignment)</div>
+            <div class="grid-item item-c">Item 3</div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>CSS Grid is Super Powerful!</p>
+    </footer>
+</body>
+</html>

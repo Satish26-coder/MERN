@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Practice Zone</title>
+    <link rel="stylesheet" href="flexbox-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Learning CSS Flexbox</h1>
+    </header>
+
+    <main>
+        <!-- Example 1: Basic Flex Container -->
+        <h2>Example 1: Basic Row</h2>
+        <div class="flex-container example-1">
+            <div class="flex-item item-1">Item 1</div>
+            <div class="flex-item item-2">Item 2</div>
+            <div class="flex-item item-3">Item 3</div>
+        </div>
+
+        <!-- Example 2: Column Direction -->
+        <h2>Example 2: Column Direction</h2>
+        <div class="flex-container example-2">
+            <div class="flex-item item-1">Item A</div>
+            <div class="flex-item item-2">Item B</div>
+            <div class="flex-item item-3">Item C</div>
+        </div>
+
+        <!-- Example 3: Justify Content -->
+        <h2>Example 3: Justify Content</h2>
+        <div class="flex-container example-3">
+            <div class="flex-item item-1">Block X</div>
+            <div class="flex-item item-2">Block Y</div>
+            <div class="flex-item item-3">Block Z</div>
+        </div>
+
+        <!-- Example 4: Align Items -->
+        <h2>Example 4: Align Items</h2>
+        <div class="flex-container example-4">
+            <div class="flex-item item-1" style="font-size: 1.5em;">Tall 1</div>
+            <div class="flex-item item-2">Short 2</div>
+            <div class="flex-item item-3" style="font-size: 1.2em; padding: 20px 5px;">Medium 3</div>
+        </div>
+
+        <!-- Example 5: Flex Grow, Shrink, Basis (Individual Items) -->
+        <h2>Example 5: Flex Grow, Shrink, Basis</h2>
+        <div class="flex-container example-5">
+            <div class="flex-item item-1 flex-grow-example">Grow Item</div>
+            <div class="flex-item item-2 flex-basis-example">Basis Item</div>
+            <div class="flex-item item-3">Normal Item</div>
+        </div>
+
+        <!-- Example 6: Wrapping Items -->
+        <h2>Example 6: Wrapping Items</h2>
+        <div class="flex-container example-6">
+            <div class="flex-item item-1">1</div>
+            <div class="flex-item item-2">2</div>
+            <div class="flex-item item-3">3</div>
+            <div class="flex-item item-1">4</div>
+            <div class="flex-item item-2">5</div>
+            <div class="flex-item item-3">6</div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Flexbox is Awesome!</p>
+    </footer>
+</body>
+</html>

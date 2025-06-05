@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box Model Deep Dive</title>
+    <link rel="stylesheet" href="box-model-styles.css">
+</head>
+<body>
+    <header>
+        <h1>Understanding the CSS Box Model</h1>
+    </header>
+
+    <main>
+        <div class="info-text">
+            <p>Every HTML element can be considered as a box. The CSS box model describes how these boxes are structured and how their size is calculated. We'll explore Content, Padding, Border, and Margin.</p>
+        </div>
+
+        <div class="box my-first-box">
+            <h2>Box Alpha</h2>
+            <p>This is the content area of Box Alpha. We will add padding, border, and margin to this box to see how they affect its layout and size.</p>
+            <button>Click Me</button>
+        </div>
+
+        <div class="box my-second-box">
+            <h2>Box Beta</h2>
+            <p>This is Box Beta. Observe the space between Box Alpha and this box – that's margin at work!</p>
+        </div>
+
+        <div class="box box-sizing-example">
+            <h2>Box Gamma (for box-sizing)</h2>
+            <p>This box will demonstrate the difference between <code>content-box</code> and <code>border-box</code>.</p>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Master the Box Model!</p>
+    </footer>
+</body>
+</html>

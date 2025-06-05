@@ -1,0 +1,114 @@
+    
+* {
+    /* We might introduce box-sizing: border-box later here */
+    /* margin: 0; */ /* Trainer might want to show default margins first */
+    /* padding: 0; */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #4A5568; /* Tailwind Slate 700 */
+    color: white;
+    padding: 15px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+footer {
+    margin-top: 30px;
+}
+
+h1, h2 {
+    margin-bottom: 10px;
+    color: #2D3748; /* Tailwind Slate 800 */
+}
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #CBD5E0; /* Tailwind Slate 300 */
+    padding-bottom: 5px;
+    margin-top: 20px;
+}
+
+.info-text {
+    background-color: #E2E8F0; /* Tailwind Slate 200 */
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    border-left: 5px solid #4299E1; /* Tailwind Blue 500 */
+}
+
+/* --- Box Model Specific Styles --- */
+.box {
+    background-color: #BEE3F8; /* Tailwind Blue 200 */
+    color: #2C5282; /* Tailwind Blue 800 */
+    margin-bottom: 20px; /* Default space below each box */
+
+    /* Trainer will uncomment and explain these step-by-step */
+    /* --- CONTENT AREA (defined by width/height by default) --- */
+    width: 300px;
+    height: auto; /* Let height be determined by content or min-height */
+    min-height: 100px; /* Ensure box has some height even with little content */
+
+    /* --- PADDING --- */
+     /* Shorthand for all sides */
+    
+    padding-top: 10px;
+    padding-right: 15px;
+    padding-bottom: 20px;
+    padding-left: 25px;
+    
+
+    /* --- BORDER --- */
+    border: 5px solid #2B6CB0; /* Shorthand: width style color (Tailwind Blue 700) */
+    
+    border-width: 5px;
+    border-style: dotted;
+    border-color: #06080a;
+    
+
+    /* --- MARGIN --- */
+     margin: 25px;  /* Shorthand for all sides */
+    
+    margin-top: 50px;
+    margin-right: auto; // Useful for centering block elements
+    margin-bottom: 100px;
+    margin-left: auto;  // Useful for centering block elements
+    
+}
+
+.my-first-box h2, .my-first-box p, .my-first-box button {
+    /* Just to ensure text is visible if background is changed */
+}
+
+.my-first-box button {
+    padding: 8px 15px;
+    background-color: #3182CE; /* Tailwind Blue 600 */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.my-second-box {
+    background-color: #FED7D7; /* Tailwind Red 200 */
+    color: #9B2C2C; /* Tailwind Red 800 */
+    border-color: #C53030; /* Will be overridden if .box border is active */
+    /* border: 5px solid #C53030; */ /* Tailwind Red 700 */
+}
+
+.box-sizing-example {
+    width: 300px;
+    padding: 20px;
+    border: 10px solid #38A169; /* Tailwind Green 600 */
+    background-color: #C6F6D5; /* Tailwind Green 200 */
+    /* TODO: Add box-sizing: content-box; (default) */
+    /* TODO: Add box-sizing: border-box; and explain the difference */
+    box-sizing: border-box;
+}
