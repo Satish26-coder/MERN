@@ -1,0 +1,1 @@
+console.log("hello all this is the fundamentals of js,its working");
