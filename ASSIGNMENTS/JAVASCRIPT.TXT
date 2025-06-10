@@ -1,0 +1,192 @@
+Assignment 1: Interactive Profile Card
+Objective: This assignment aims to solidify your understanding of:
+Basic HTML structure.
+Selecting DOM elements using JavaScript (getElementById, querySelector).
+Manipulating element content (.textContent).
+Manipulating element attributes (.src, .alt).
+Basic event handling (click event).
+Using classList.toggle() to change an element's appearance by adding/removing CSS classes.
+Conditional logic within an event handler (to change button text).
+
+
+Detailed Tasks & Guidance:
+HTML Structure (
+Create a main div with id="profileCard" to act as the card container.
+Inside, include:
+An <img> tag with id="profileImage". You can use a placeholder image URL initially (e.g., https://via.placeholder.com/150) or find a sample image.
+An <h2> tag with id="profileName".
+A <p> tag with id="profileBio".
+A <button> with id="toggleDetailButton". Its initial text should be "Show Details".
+Another div with id="profileDetails". Inside this, put some placeholder text like <p>Email: example@email.com</p><p>Location: Your City</p>.
+
+
+
+
+CSS Styling (
+Give the .profileCard (or #profileCard if you prefer using ID for the main container style) a width, border, padding, margin, and maybe text-align: center;.
+Style the #profileImage (e.g., border-radius: 50%; to make it circular, width: 100px; height: 100px; object-fit: cover;).
+Style the #profileDetails div with display: none; initially. This will hide it.
+Create a CSS class, for example, .visible-details, that has display: block;. We will toggle this class with JavaScript.
+
+
+JavaScript Logic (
+Select Elements:
+At the top of your script, use document.getElementById() or document.querySelector() to get references to all the important HTML elements (profileImage, profileName, profileBio, toggleDetailButton, profileDetails) and store them in const variables.
+
+
+Set Initial Content (Page Load):
+Directly in your JavaScript, set the .src and .alt for the profileImage.
+Set the .textContent for profileName and profileBio with some sample data.
+
+
+Event Listener for the Button:
+Add a click event listener to toggleDetailButton.
+Inside the event listener function:
+Use profileDetails.classList.toggle("visible-details"); to show/hide the details div.
+Check if the profileDetails div now has the visible-details class (using profileDetails.classList.contains("visible-details")).
+If it's visible, change the textContent of toggleDetailButton to "Hide Details".
+Else (if it's hidden), change the textContent of toggleDetailButton back to "Show Details".
+
+
+
+
+
+
+
+
+Bonus Task Guidance:
+Select the profileCard element.
+Add a mouseover event listener to it. Inside this function, change profileCard.style.backgroundColor to a different color.
+Add a mouseout event listener to it. Inside this function, change profileCard.style.backgroundColor back to its original color (or to null or an empty string to remove the inline style and let CSS take over).
+
+
+
+Assignment 2: Simple Calculator
+Objective: This assignment focuses on:
+Creating and using functions with parameters and return values.
+Getting user input from form fields (<input type="number">).
+Converting string input to numbers (Number(), parseInt()).
+Attaching multiple event listeners to different buttons.
+Performing arithmetic operations.
+Displaying results back into the DOM.
+Basic error handling.
+
+
+Detailed Tasks & Guidance:
+HTML Structure (
+Two <input type="number"> fields with unique IDs (e.g., id="number1", id="number2").
+Four <button> elements for the operations: Add, Subtract, Multiply, Divide. Give each button a unique ID (e.g., id="addButton", id="subtractButton", etc.).
+A <p> or <span> element with an id (e.g., id="resultDisplay") to show the calculated result or any error messages.
+
+
+CSS Styling (
+Basic styling to make the input fields, buttons, and result area look organized.
+
+
+JavaScript Logic (
+Select Elements: Get references to both input fields, all four operation buttons, and the result display area.
+Create Operation Functions:
+function add(numA, numB) { return numA + numB; }
+function subtract(numA, numB) { return numA - numB; }
+function multiply(numA, numB) { return numA * numB; }
+function divide(numA, numB) { ... }
+For the divide function, add a check: if numB is 0, return an error message string (e.g., "Error: Cannot divide by zero!") instead of performing the division.
+
+
+
+
+Add Event Listeners to Operation Buttons:
+For each button (Add, Subtract, Multiply, Divide), add a click event listener.
+Inside each event listener function:
+Get the .value from the number1 input field and the number2 input field.
+Convert these values to numbers using Number().
+Input Validation: Check if the converted values are valid numbers (e.g., not NaN - Not a Number). You can use isNaN(value) which returns true if the value is NaN. If not valid numbers, display an error message in resultDisplay and return from the function.
+Call the appropriate operation function (e.g., add(convertedNum1, convertedNum2)).
+Take the result returned by the function and set the .textContent of resultDisplay to show it (e.g., resultDisplay.textContent = "Result: " + sum;).
+For division, if your divide function returned an error string, display that error string.
+
+
+
+
+
+
+
+
+Bonus Task Guidance:
+Add a "Clear" button (<button id="clearButton">Clear</button>).
+Add a click event listener to it.
+Inside the listener, set the .value of both input fields to an empty string ("") and clear the resultDisplay.textContent.
+
+
+
+Assignment 3: Dynamic List Builder
+Objective: This assignment emphasizes:
+Dynamically creating HTML elements (document.createElement()).
+Appending elements to the DOM (.appendChild()).
+Working with arrays to store data (optional but good for this).
+Handling events on dynamically created elements.
+Removing elements from the DOM (.remove()).
+
+
+Detailed Tasks & Guidance:
+HTML Structure (
+An <input type="text"> with id="itemInput" for the user to type new list items.
+A <button> with id="addItemButton", text "Add Item".
+An empty <ul> (unordered list) with id="itemList" where new items will be displayed.
+
+
+CSS Styling (
+Style the input, button, and list items for better presentation. You might want a class for the remove buttons.
+
+
+JavaScript Logic (
+(Optional but Recommended) Data Array:
+let itemsArray = []; Declare an array at the top of your script to store the text of the list items. This isn't strictly necessary for just displaying, but becomes useful if you want to save/load data later.
+
+
+Select Elements: Get references to itemInput, addItemButton, and itemList.
+Function 
+If using itemsArray, this function would clear itemList.innerHTML and then loop through itemsArray, creating and appending an <li> (with text and remove button) for each item. Call this after adding or removing from itemsArray.
+
+
+Event Listener for "Add Item" Button (and "Enter" key on input):
+When the button is clicked (or Enter is pressed in itemInput):
+Get the text from itemInput.value.trim().
+If the text is empty, do nothing (or show a small message) and return.
+(Optional) Add item text to 
+Create new list item: const newItemLI = document.createElement("li");
+Create a span for the text (good for styling/clicking text later):
+const itemTextSpan = document.createElement("span");
+itemTextSpan.textContent = itemText;
+newItemLI.appendChild(itemTextSpan);
+Create a "Remove" button:
+const removeButton = document.createElement("button");
+removeButton.textContent = "Remove"; // Or "X"
+removeButton.classList.add("remove-item-btn"); // For styling
+newItemLI.appendChild(removeButton);
+Add Event Listener to this 
+Inside this listener, when removeButton is clicked:
+Remove its parent <li> (which is newItemLI) from the itemList <ul>. You can use newItemLI.remove();.
+(Optional) If using itemsArray, find and remove the corresponding item text from the array and then re-render the list.
+
+
+
+
+Append newItemLI to itemList: itemList.appendChild(newItemLI);.
+Clear itemInput.value = ""; and set focus back to it.
+(Optional) If not using renderList(), this is where you add elements. If using renderList(), call it here.
+
+
+
+
+
+
+
+
+Bonus Task Guidance:
+Add a click event listener to the itemTextSpan (or the newItemLI itself, being careful not to trigger it when the remove button inside is clicked - event.target can help here).
+When an item's text is clicked, toggle a CSS class (e.g., .completed-task) on the newItemLI.
+In your CSS, define .completed-task { text-decoration: line-through; color: gray; }.
+
+
+
