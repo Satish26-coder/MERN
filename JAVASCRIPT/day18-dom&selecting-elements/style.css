@@ -1,0 +1,72 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+
+header, footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.title {
+    color: navy;
+}
+
+.site-navigation ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.site-navigation li {
+    display: inline-block; /* Just for basic layout */
+    margin-right: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: green;
+}
+
+.nav-link.active-link {
+    font-weight: bold;
+    color: darkgreen;
+}
+
+.info-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    background-color: #fff;
+}
+
+.intro-text {
+    color: #555;
+    font-style: italic;
+}
+
+.action-btn {
+    padding: 8px 12px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.special-btn {
+    background-color: orange;
+}
+
+img {
+    margin-top: 10px;
+    display: block; /* To give it its own line */
+}
+
+label {
+    display: block; /* Make label take its own line for simple forms */
+    margin-bottom: 5px;
+}

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Day 5 - DOM Selection Practice</title>
+    <link rel="stylesheet" href="style.css"> <!-- Optional: for minimal styling -->
+</head>
+<body>
+    <header>
+        <h1 id="main-heading" class="title">Welcome to DOM Land!</h1>
+    </header>
+
+    <nav class="site-navigation">
+        <ul>
+            <li><a href="#" class="nav-link">Home</a></li>
+            <li><a href="#" class="nav-link active-link">Products</a></li>
+            <li><a href="#" class="nav-link">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-content">
+        <p class="intro-text">This page is for practicing how to select HTML elements using JavaScript.</p>
+        
+        <div class="info-box" id="first-box">
+            <p>This is the first information box. It has some text.</p>
+            <button class="action-btn">Learn More</button>
+        </div>
+
+        <div class="info-box" id="second-box">
+            <p>Another info box here, also with a button.</p>
+            <button class="action-btn special-btn">Sign Up</button>
+        </div>
+
+        <img id="main-image" src="https://via.placeholder.com/200x100?text=Sample+Image" alt="A sample placeholder image">
+        
+        <form id="contact-form">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" name="visitor_name" placeholder="Enter your name">
+        </form>
+    </main>
+
+    <footer>
+        <p id="footer-text">© 2024 DOM Practice Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

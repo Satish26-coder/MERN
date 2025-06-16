@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Day 6 - DOM Manipulation & Events</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 id="main-heading" class="title">Welcome to DOM Land!</h1>
+    </header>
+
+    <main id="main-content">
+        <p class="intro-text" id="introMessage">This page will change with JavaScript!</p>
+        
+        <div class="info-box" id="first-box">
+            <h2 class="box-title">Box One</h2>
+            <p>Original content for box one.</p>
+            <button class="action-btn" id="changeTextBtn">Change Box 1 Text</button>
+        </div>
+
+        <div class="info-box" id="second-box">
+            <h2 class="box-title">Box Two</h2>
+            <img id="sampleImage" src="https://via.placeholder.com/150?text=Initial+Image" alt="Placeholder Image">
+            <button class="action-btn" id="changeImageBtn">Change Image</button>
+        </div>
+        
+        <a href="https://www.example.com" id="testLink" class="nav-link" target="_blank">Visit Example.com</a>
+        <button id="styleToggleBtn" class="action-btn">Toggle Style</button>
+    </main>
+
+    <footer>
+        <p id="footer-text">© 2024 DOM Practice Inc.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

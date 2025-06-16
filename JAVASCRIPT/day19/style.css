@@ -1,0 +1,68 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    text-align: center; /* Centering content for easier viewing */
+}
+
+header, footer {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+}
+
+.title {
+    color: navy;
+}
+
+.info-box {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 15px auto; /* Auto margins for horizontal centering */
+    background-color: #fff;
+    width: 80%;
+    max-width: 500px; /* Max width for info boxes */
+}
+
+.intro-text {
+    color: #555;
+    font-style: italic;
+    margin-bottom: 20px;
+}
+
+.action-btn {
+    padding: 10px 18px;
+    background-color: dodgerblue;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+}
+.action-btn:hover {
+    background-color: royalblue;
+}
+
+img {
+    margin-top: 10px;
+    display: block;
+    margin-left: auto; /* Centering block image */
+    margin-right: auto;
+    border: 2px solid #eee;
+}
+
+/* Class for JS to toggle */
+.highlight-box {
+    background-color: lightyellow !important; /* !important for demo to override other BG */
+    border-color: orange !important;
+    box-shadow: 0 0 10px orange;
+}
+
+.text-large-bold {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: green;
+}

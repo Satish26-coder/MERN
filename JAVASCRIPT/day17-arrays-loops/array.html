@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //student_id=22k61a0405;
+        // to store n no of values into one particular variable is called array
+        // how to create an array
+        let fruits=["apple","banana","mango","orange"];
+            console.log(fruits);
+        let scores=[90,85,72,98,80];
+        console.log(scores);
+        let emptpyaArr=[];
+        console.log(emptpyaArr);
+        //how to access a particular element
+        //indexing stats from zero
+        console.log(fruits[1]);
+        console.log(fruits[3]);
+        console.log(scores[2]);
+
+        //modifying array elements
+        console.log("original fruits array",fruits);
+        fruits[1]="kiwi";
+        console.log("modified fruits array",fruits);
+
+
+        //array properties: .length-to find the length of the array
+        console.log("number of fruits"+fruits.length);
+        //common array methods
+        //.push-add more items to end of the array
+        fruits.push("grapes");
+        console.log(fruits);
+
+        //.pop-removes the last item
+        scores.pop();
+        console.log(scores);
+
+        //unshift(item)-adds item to the beginning 
+        scores.unshift(100);
+        console.log(scores);
+
+        //shift()-removes the first item
+        scores.shift();
+        console.log(scores);
+
+        
+
+
+
+
+    </script>
+</body>
+</html>

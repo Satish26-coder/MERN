@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>  
+    <script>
+        let globalVar="im satish globally";
+        function showVar(){
+            console.log("this is inside the function:"+globalVar);//can access
+        }
+        showVar();
+        console.log("this is outside of the function:"+globalVar);
+
+//local scope(function scope)
+function showLoacal(){
+    let localVar="im a variable in the function";
+    const localConst="im also local";
+    console.log(localVar);
+    console.log(localConst);
+}
+showLoacal();
+console.log(localVar);
+    </script>
+</body>
+</html>

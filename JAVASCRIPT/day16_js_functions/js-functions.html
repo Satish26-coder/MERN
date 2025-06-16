@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       //FUNCTIONS-BLOCK OF STATEMENTS
+       //WHY USE? 1.REUSABILITY 2.ORGANIZATION 3.READABILITY
+       //MAKETEA()
+       //DEFINING A FUNTION:
+       function sayHello(){
+        console.log("welcome to functions");
+        alert("hello from the function");
+       }
+       //function is a keyword
+       //sayHello() is a function name
+       //calling a function-
+      // sayHello();//1
+       sayHello();//2
+
+//parameters and arguments
+//greet is function name and userName is the parameter
+function greet(userName){
+    console.log("hello,"+userName+"..");
+    
+}
+greet("krishna");
+greet("radha");
+
+let student=prompt("enter your name");
+greet(student);
+//function with multiple parameters
+function addition(num1,num2,num3){
+    let sum=num1+num2+num3;
+    //console.log("The sum of" +num1+","+num2+"and"+num3+"is" +sum);
+    return sum;//returning the value from the function
+}
+let add=addition(5,10,7);
+console.log("the sum is :"+add);
+// Return values
+// return statement
+
+
+//types of functions
+//1.function declaration//
+//2.function expression-
+/*const product=function(x,y){
+return x*y;
+}
+
+let pro=product(4,6);*/
+
+
+//3.Arrow function->
+const subtract=(a,b)=> a-b;
+console.log("diffrence:"+subtract(10,3));
+
+//scope
+
+    </script>
+</body>
+</html>
