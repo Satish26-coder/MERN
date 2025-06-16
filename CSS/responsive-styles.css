@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f9f9f9;
+    padding: 10px; /* Minimal padding for demo */
+}
+
+header, footer {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+footer { margin-top: 1em; }
+
+h1, h2 { margin-bottom: 0.75em; }
+h2 {
+    font-size: 1.5em;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0.3em;
+    margin-top: 1em;
+}
+
+/* Navigation basic styling */
+.main-nav {
+    background-color: #eee;
+    padding: 0.5em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+.main-nav a {
+    display: inline-block; /* Or use Flexbox later */
+    padding: 0.5em 1em;
+    text-decoration: none;
+    color: #337ab7;
+}
+.main-nav a:hover {
+    background-color: #ddd;
+}
+
+
+/* --- Content Grid (Desktop First Example) --- */
+.content-grid {
+    display: grid;
+    /* Default: 3 columns for larger screens */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+}
+
+.grid-item.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    min-height: 100px; /* For visibility */
+}
+
+
+/* --- Fluid Section --- */
+.fluid-section {
+    margin-top: 2em;
+    background-color: #e7f3fe;
+    padding: 1em;
+    border-radius: 5px;
+}
+.fluid-box {
+    width: 80%; /* Percentage width */
+    margin: 0 auto 1em auto; /* Centered with auto margins */
+    background-color: #d1eaff;
+    padding: 1em;
+    border: 1px solid #b3d7ff;
+}
+.fluid-image {
+     max-width: 100%; height: auto; 
+}
+.responsive-text {
+    font-size: 4vw;
+}
+
+@media(max-width:768px)
+{
+    .content-grid{
+        grid-template-columns:repeat(2,1fr);
+
+    }
+}
+@media(max-width:480px{
+    .content-grid{
+        grid-template-columns: 1fr;
+    }
+    body{padding:5px;
+    h1{font-size: 1em;
+
+}

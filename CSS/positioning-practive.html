@@ -1,0 +1,75 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning Techniques</title>
+    <link rel="stylesheet" href="positioning-styles.css">
+</head>
+<body>
+    <header class="main-header">
+        <h1>Mastering CSS Positioning</h1>
+    </header>
+
+    <div class="info-box">
+        <p>The <code>position</code> property specifies the type of positioning method used for an element. We'll explore <code>static</code>, <code>relative</code>, <code>absolute</code>, <code>fixed</code>, and <code>sticky</code>.</p>
+    </div>
+
+    <!-- Static is default, so we'll just describe it -->
+    <h2><code>position: static;</code> (Default)</h2>
+    <div class="box static-box">Static Box (Normal Flow)</div>
+    <div class="box static-box-sibling">Sibling to Static Box</div>
+
+    <hr>
+
+    <h2><code>position: relative;</code> & Offset Properties</h2>
+    <div class="box relative-container">
+        I am a relative container.
+        <div class="box relative-box">Relative Box</div>
+    </div>
+    <div class="box after-relative">Box After Relative</div>
+
+
+    <hr>
+
+    <h2><code>position: absolute;</code> (inside a relative parent)</h2>
+    <div class="box absolute-parent">
+        Parent (position: relative)
+        <div class="box absolute-box">Absolute Box</div>
+        <div class="box normal-sibling-to-absolute">Sibling of Absolute</div>
+    </div>
+
+    <hr>
+
+    <h2><code>position: fixed;</code> (Viewport Fixed)</h2>
+    <div class="fixed-header-placeholder" style="height: 70px; background: #eee; text-align: center; line-height: 70px; margin-bottom: 10px;">(Space for Fixed Header)</div>
+    <div class="box fixed-box">Fixed Box (e.g., Header)</div>
+    <!-- Add lots of content to make the page scrollable -->
+    <div style="height: 1200px; background: #f0f0f0; padding:20px;">Scrollable Content Area...</div>
+
+
+    <hr>
+
+    <h2><code>position: sticky;</code> (Sticks on Scroll)</h2>
+    <div class="sticky-parent" style="height: 300px; overflow-y: auto; border: 1px solid #ccc;">
+        <p>Scroll inside this parent...</p>
+        <div class="box sticky-box">Sticky Element</div>
+        <p style="margin-top: 300px;">More content in sticky parent...</p>
+        <p>Even more content...</p>
+    </div>
+
+
+    <hr>
+
+    <h2><code>z-index</code> for Stacking Order</h2>
+    <div class="z-index-container">
+        <div class="box z-box z-box-1">Z-Box 1 (z-index: 1)</div>
+        <div class="box z-box z-box-2">Z-Box 2 (z-index: 2, should be on top)</div>
+        <div class="box z-box z-box-0">Z-Box 0 (default z-index: auto/0, behind others)</div>
+    </div>
+
+    <footer>
+        <p>Positioning is key to complex layouts!</p>
+    </footer>
+</body>
+</html>

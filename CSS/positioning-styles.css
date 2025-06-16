@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+    padding: 20px;
+}
+
+.main-header, footer {
+    background-color: #222;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+footer {
+    margin-top: 30px;
+}
+
+h1, h2 {
+    margin-bottom: 12px;
+    color: #111;
+}
+h2 {
+    font-size: 1.6em;
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 6px;
+    margin-top: 25px;
+}
+
+hr {
+    margin: 30px 0;
+    border: 0;
+    border-top: 1px solid #ccc;
+}
+
+.info-box {
+    background-color: #e7f3fe;
+    border-left: 4px solid #2196F3;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+}
+.info-box code {
+    background-color: #d0eaff;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* --- Positioning Specific Styles --- */
+.box {
+    padding: 20px;
+    margin-bottom: 10px;
+    border: 2px solid;
+    min-height: 60px; /* Ensure some height */
+    text-align: center;
+}
+
+.static-box { background-color: #f0f0f0; border-color: #ccc; }
+.static-box-sibling { background-color: #e0e0e0; border-color: #bbb; }
+
+/* --- Relative Positioning --- */
+.relative-container {
+    background-color: #fff0f5; /* Lavender blush */
+    border-color: #dda0dd;   /* Plum */
+    /* The container itself is in normal flow */
+}
+.relative-box{
+    background-color: #dda0dd;
+    border-color: #ba55d3;
+    color: white;
+    position:relative;
+    top:20px;
+    left: 40px;
+}
+
+.absolute-parent{
+    background-color: #f0fff0;
+    border-color: red;
+    height: 200px;
+    position:relative;
+}
+.absolute-box{
+    background-color: lightgreen;
+    border-color: darkgreen;
+    color: blue;
+    width: 150px;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+}
+.fixed-box{
+    background-color: black;
+    border-color: darkblue;
+    color: white;
+    width:100%;
+    padding: 15px;
+    text-align: center;
+    position:fixed;
+    top:0;
+    left: 100;
+    z-index: index 1000;
+}
+.sticky-box{
+    position:sticky;
+    top:10px;
+
+}
+.z-index-container{
+    position:relative;
+    height: 150px;
+    border: 1px dashed;
+    background-color: #eee;
+
+}
+.z-box {
+    width: 100px;
+    height: 100px;
+    position: absolute; /* For z-index to have a clear effect */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.z-box-0 { background-color: #ffe0b2; border-color: #ffb74d; top: 40px; left: 40px;z-index: 0 or auto; }
+.z-box-1 { background-color: #c5cae9; border-color: #7986cb; top: 10px; left: 10px;z-index: 1; }
+.z-box-2 { background-color: #b2dfdb; border-color: #4db6ac; top: 25px; left: 70px;z-index: 2;  }
