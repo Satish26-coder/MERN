@@ -1,0 +1,45 @@
+
+
+NODE JS=>
+RUN TIME ENVIRONMENT FOR JAVASCRIPT
+BUILT ON CHROME'S V8 JAVASCRIPT ENGINE
+
+Key characheristics / features
+->Event Driven & Asynchronous(non-blocking I/o)
+->single threaded(with an Event loop)
+
+what can you do?
+build web servers & APIs
+CLI
+Desktop applications
+iot
+
+->file system
+->modules
+
+
+-> installing node.js &npm
+
+
+modules concept
+
+->small reusable pieces
+->commonJS
+require() function:
+
+Eg: const fs=require('fs');//fs-file system
+
+->module.exports object:
+
+file system module:
+asynchronous/synchronous
+reading a file-> fs.readfile(filename,version,callback_function)
+
+callback function=> arrow function ()=>{}
+
+
+
+
+
+
+
